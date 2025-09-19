@@ -1,45 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(174, 236, 236);
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-.proyecto {
-    background-color: rgb(174, 236, 236);
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-footer {
-    text-align: center;
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
-    background: #333;
-    color: white;
 }
+
+.main-header {
+    background-color: #00796B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: #004D40;
 }
 
 nav ul li {
@@ -49,4 +57,34 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
-}   
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #00796B;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #80cbc4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
